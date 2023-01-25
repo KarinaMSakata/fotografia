@@ -1,15 +1,41 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.logo {
+  mix-blend-mode: multiply;
+}
+
+body {
+  background: linear-gradient(106deg, rgba(252,220,111,1) 0%, rgba(244,198,112,1) 50%, rgba(252,220,111,1) 100%);
+  font-family: Amaranth;
+}
+
+.cabecalho {
+  padding: 30px;
+  max-width: 1700px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cabecalho .logo  {
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.cabecalho .menu {
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+}
+
+.cabecalho nav li a {
+  padding: 20px;
+  color: #fcfae7;
+  font-size: 20px;
+}
+
+.cabecalho nav li a:hover {
+  color: #b3a104b0;
+}
