@@ -10,4 +10,6 @@ describe 'Usuário visita tela inicial' do
       expect(page).to have_content('Vamos conversar?')
     end
   end 
+
+
 end
