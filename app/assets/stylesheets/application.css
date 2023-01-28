@@ -87,3 +87,57 @@ body {
   display: block;
   transition-duration: .3s;
 }
+
+.criacao {
+  font-size: 20px;
+  text-align: center;
+}
+
+.fa-solid {
+  color: rgb(180, 10, 10);
+}
+
+.copyright {
+  text-align: center;
+}
+
+.perfil {
+  justify-content: center;
+  display: flex;
+}
+
+.perfil .profile {
+  border-radius: 75px;
+  width: auto;
+  height: 600px;
+  padding: 20px;
+}
+
+.descricao {
+  margin: 20px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #29056bf5;
+  justify-content: center;
+  position: relative;
+}
+
+.descricao p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.descricao h3 {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}

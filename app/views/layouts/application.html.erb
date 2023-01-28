@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    
+    <script src="https://kit.fontawesome.com/80859ebbdd.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "reset" %>
     <%= stylesheet_link_tag "application" %>
 
@@ -25,14 +25,21 @@
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="#">Galeria</a></li>
-          <li><a href="#">Vem me conhecer</a></li>
+          <li><%= link_to 'Galeria', root_path %></li>
+          <li><%= link_to 'Vem me conhecer', summary_index_path %></li>
           <li><a href="#">Vamos conversar?</a></li>
         </ul>
       </nav>
     </header>
     <%= yield %>
-
+    <footer>
+      <div class="criacao">
+        <p> Created with <i class="fa-solid fa-heart fa-beat"></i>  by Karina Sakata </p>
+      </div>
+      <div class="copyright">
+        <p> Copyright <i class="fa-regular fa-copyright"></i> 2022 Karina Sakata </p>
+      </div>
+    </footer>
   </body>
   
   </html>
