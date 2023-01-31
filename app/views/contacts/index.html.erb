@@ -1,3 +1,21 @@
-<main class="container">
-<h3>Contato</h3>
-</main>
+<div class="container-form">
+  <div class="formulario">
+    <h3>Contato</h3>
+
+    <%= form_with(model: @contact) do |f| %>
+      <div class="mb-3">
+        <%= f.label :name, 'Nome', class:"form-label" %>
+        <%= f.text_field :name, class:"form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :email, 'E-mail', class:"form-label" %>
+        <%= f.text_field :email, class:"form-control" %>
+      </div>
+      <div class="mb-3"
+        <%= f.label :message, 'Mensagem', class:"form-label" %>
+        <%= f.text_area :message, class:"form-control" %>
+      </div>
+        <%= f.submit 'Enviar', class:"btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
