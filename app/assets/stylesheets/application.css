@@ -156,7 +156,27 @@ body {
   right: 30%;
 }
 
+.erro {
+  text-align: center;
+}
+
+.alertas {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  right: 25%;
+}
+
 footer {
   padding: 30px;
   margin: 0 auto;
+}
+
+.fa-solid.fa-triangle-exclamation{
+  color: rgb(196, 177, 5);
+}
+
+.fa-solid.fa-paper-plane {
+  color: rgb(9, 104, 9)
 }

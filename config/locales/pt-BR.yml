@@ -1,0 +1,9 @@
+pt-BR:
+  mail_form:
+    models:
+      contact: "Contato"
+    attributes:
+      contact:
+        name: "Nome"
+        email: "E-mail"
+        message: "Mensagem"
