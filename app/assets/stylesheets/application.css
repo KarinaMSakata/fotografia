@@ -3,8 +3,9 @@
 }
 
 body {
-  background: linear-gradient(106deg, rgba(252,220,111,1) 0%, rgba(244,198,112,1) 50%, rgba(252,220,111,1) 100%);
+  background: linear-gradient(106deg, rgba(247,224,144,1) 0%, rgba(244,198,112,0.7987570028011204) 50%, rgba(247,224,144,1) 100%);
   font-family: Amaranth;
+  position: relative;
 }
 
 .cabecalho {
@@ -25,14 +26,16 @@ body {
 
 .cabecalho .menu {
   display: flex;
-  justify-content: center;
-  padding: 45px;
+  justify-content:space-between;
+  padding: 20px;
+  width: 63%;
+  margin: 20px auto;
 }
 
 .cabecalho nav li a {
   padding: 20px;
-  color: #fcfae7;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 23px;
 }
 
 .cabecalho nav li a:hover {
@@ -45,21 +48,24 @@ body {
   justify-content:center;
   height: auto;
 }
+
 .container{
+  margin-bottom: 20px;
   padding: 5px;
   width: 80%;
   overflow:hidden;
   height: 400px;
-  display:block;
+  display:flex;
   position: relative;
+  align-items: center;
 }
+
 .photo {
   width: 100%;
-  transition-duration: .3s;
   max-width: 100%;
   display:block;
   overflow:hidden;
-  cursor:pointer;
+  padding: 10px;
 }
 .title{
   position:absolute;
@@ -82,6 +88,7 @@ body {
   filter: grayscale(50%);
   opacity: .7;
 }
+
 .container:hover span{
   color:white;
   display: block;
@@ -143,19 +150,6 @@ body {
   transform: translate(-50%, -50%) 
 }
 
-.container-form {
-  position: relative;
-  padding: 40px;
-  margin-bottom: 5%;
-}
-
-.formulario {
-  width: 40%;
-  position: relative;
-  left: 30%;
-  right: 30%;
-}
-
 .erro {
   text-align: center;
 }
@@ -170,7 +164,7 @@ body {
 
 footer {
   padding: 30px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .fa-solid.fa-triangle-exclamation{
@@ -179,4 +173,59 @@ footer {
 
 .fa-solid.fa-paper-plane {
   color: rgb(9, 104, 9)
+}
+
+.front-cover{
+  padding: 10px;
+  width: 100%;
+  transition-duration: .3s;
+  max-width: 100%;
+  display:block;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+.fa-solid.fa-angles-up {
+  color: rgb(37, 3, 129);
+  font-size: 100px;
+}
+
+.scroll-container {
+  width: 70px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  right: 170px;
+  height: 80%;
+}
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.scroll-container a {
+  position: sticky;
+  top: 88vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contatos{
+  margin-top: 150px;
+  text-align: center;
+}
+
+.fa-brands{
+  font-size: 30px;
+  padding:10px;
 }

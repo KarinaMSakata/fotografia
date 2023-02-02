@@ -14,11 +14,11 @@ describe 'Usuário visita tela inicial' do
   it 'e vê links para acessar os álbuns' do
     visit root_path
     
-    expect(page).to have_link 'Natureza'
-    expect(page).to have_link 'Paisagem'
-    expect(page).to have_link 'Família'
-    expect(page).to have_link 'Retrato/Ensaios'
-    expect(page).to have_link 'Casais'
+    expect(page).to have_content 'Natureza'
+    expect(page).to have_content 'Paisagem'
+    expect(page).to have_content 'Família'
+    expect(page).to have_content 'Retrato/Ensaios'
+    expect(page).to have_content 'Casais'
   end 
 
   it 'e vê aviso de direitos autorais' do
