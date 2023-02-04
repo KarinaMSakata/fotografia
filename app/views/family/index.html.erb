@@ -1,8 +1,12 @@
 <div class="container-lg">
-  <div class="gallery" data-toggle="modal" data-target="#lightbox">
+  <div class="gallery">
   <% @images.each do |img| %>
     <div class="photo">
       <%= image_tag img, class:"img", alt:"Family" %>
     </div>
   <% end %>
+</div>
+
+<div class="scroll-container">
+  <a><%= link_to '<i class="fa-solid fa-angles-up fa-bounce"></i>'.html_safe, "#top" %></a>
 </div>
