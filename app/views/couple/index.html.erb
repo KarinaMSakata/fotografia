@@ -1,7 +1,9 @@
 <div class="container-lg">
-  <% @images.each do |img| %>
-    <div class="photo">
-      <%= image_tag img, class:"img-fluid", alt:"Couple" %>
-    </div>
-  <% end %>
+  <div class="gallery" data-toggle="modal" data-target="#lightbox">
+    <% @images.each do |img| %>
+      <div class="photo">
+        <%= image_tag img, class:"img", alt:"Couple" %>
+      </div>
+    <% end %>
+  </div>
 </div>
